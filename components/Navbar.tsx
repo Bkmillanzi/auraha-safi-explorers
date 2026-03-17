@@ -21,7 +21,7 @@ export default function Navbar() {
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <Image src="/logo.png" alt="Auraha Safi Explorers" width={0} height={0} sizes="100vw" style={{ height: "56px", width: "auto" }} className="drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300 shrink-0" />
+          <Image src="/auraha-safi-explorers/logo.png" alt="Auraha Safi Explorers" width={0} height={0} sizes="100vw" style={{ height: "56px", width: "auto" }} className="drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300 shrink-0" />
           <div className="flex flex-col leading-none">
             <span className="text-white font-bold text-lg tracking-tight">Auraha Safi Explorers</span>
             <span className="text-yellow-400 text-[10px] tracking-widest uppercase">Pure exploration with endless joy</span>
