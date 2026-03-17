@@ -23,16 +23,16 @@ export default function HeroSection() {
       <div className="hero-overlay absolute inset-0" />
 
       <div className="relative z-10 h-full flex flex-col items-center justify-center px-6 text-center">
-        <div className="max-w-5xl mx-auto px-8 py-10 sm:px-14 sm:py-14">
+        <div className="max-w-5xl mx-auto px-4 py-6 sm:px-10 sm:py-10">
           {/* Motto pill */}
-          <div className="inline-flex items-center gap-2 glass px-5 py-2.5 rounded-full text-white/90 text-sm font-medium mb-8 animate-fade-in-up">
+          <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full text-white/90 text-xs sm:text-sm font-medium mb-5 sm:mb-8 animate-fade-in-up">
             <span className="w-2 h-2 rounded-full bg-[#D4975C] animate-pulse shrink-0" />
             <span className="italic font-light tracking-wide text-yellow-400">Pure exploration with endless joy</span>
             <span className="w-px h-3.5 bg-white/20" />
             <span className="text-white/60 text-xs not-italic">Arusha, Tanzania</span>
           </div>
 
-          <h1 className="font-display text-5xl sm:text-6xl md:text-8xl font-black text-white leading-[1.05] mb-6 animate-fade-in-up-delay-1">
+          <h1 className="font-display text-4xl sm:text-6xl md:text-8xl font-black text-white leading-[1.05] mb-4 sm:mb-6 animate-fade-in-up-delay-1">
             Tanzania Like
             <br />
             <span className="italic text-[#D4975C]">Never Before</span>
@@ -40,7 +40,7 @@ export default function HeroSection() {
             Awaits You
           </h1>
 
-          <p className="text-white/75 text-lg sm:text-xl max-w-2xl mx-auto mb-10 animate-fade-in-up-delay-2">
+          <p className="text-white/75 text-sm sm:text-xl max-w-2xl mx-auto mb-6 sm:mb-10 animate-fade-in-up-delay-2">
             Expertly crafted safaris, Kilimanjaro treks, and Zanzibar escapes — designed by Arusha locals who know every trail and sunrise.
           </p>
 

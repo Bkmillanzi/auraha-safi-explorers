@@ -16,15 +16,15 @@ export default function Navbar() {
 
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-      scrolled ? "glass-dark shadow-2xl py-3" : "py-5"
+      scrolled ? "glass-dark shadow-2xl py-2 md:py-3" : "py-3 md:py-5"
     }`}>
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <Image src="/auraha-safi-explorers/logo.png" alt="Auraha Safi Explorers" width={0} height={0} sizes="100vw" style={{ height: "56px", width: "auto" }} className="drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300 shrink-0" />
+          <Image src="/auraha-safi-explorers/logo.png" alt="Auraha Safi Explorers" width={0} height={0} sizes="100vw" style={{ height: "40px", width: "auto" }} className="drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300 shrink-0 md:h-[56px]" />
           <div className="flex flex-col leading-none">
-            <span className="text-white font-bold text-lg tracking-tight">Auraha Safi Explorers</span>
-            <span className="text-yellow-400 text-[10px] tracking-widest uppercase">Pure exploration with endless joy</span>
+            <span className="text-white font-bold text-base md:text-lg tracking-tight">Auraha Safi Explorers</span>
+            <span className="text-yellow-400 text-[9px] md:text-[10px] tracking-widest uppercase">Pure exploration with endless joy</span>
           </div>
         </Link>
 
