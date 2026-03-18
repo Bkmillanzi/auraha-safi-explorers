@@ -1,0 +1,4 @@
+1:"$Sreact.fragment"
+2:I[82843,["/auraha-safi-explorers/_next/static/chunks/3a9a60bda3a5469e.js","/auraha-safi-explorers/_next/static/chunks/d053d1daf5e77eb7.js"],"default"]
+3:I[93541,["/auraha-safi-explorers/_next/static/chunks/3a9a60bda3a5469e.js","/auraha-safi-explorers/_next/static/chunks/d053d1daf5e77eb7.js"],"default"]
+0:{"buildId":"_-cnT2bbnKWUaVnwRa6vT","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
