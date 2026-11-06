@@ -73,6 +73,18 @@ body {
   50%       { transform: translateY(-8px); }
 }
 
+/* Ken Burns zoom on the hero slides. The flipped variant keeps the first
+   slide mirrored (scaleX(-1)) while it zooms. */
+@keyframes zoom-in {
+  from { transform: scale(1); }
+  to   { transform: scale(1.12); }
+}
+
+@keyframes zoom-in-flipped {
+  from { transform: scaleX(-1) scale(1); }
+  to   { transform: scaleX(-1) scale(1.12); }
+}
+
 @keyframes shimmer {
   0%   { background-position: -200% center; }
   100% { background-position: 200% center; }
