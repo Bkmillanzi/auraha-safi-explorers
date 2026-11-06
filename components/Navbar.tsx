@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Button } from "@heroui/react";
+import { asset } from "@/lib/basePath";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -21,7 +22,7 @@ export default function Navbar() {
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <Image src="/auraha-safi-explorers/logo.png" alt="Auraha Safi Explorers" width={0} height={0} sizes="100vw" style={{ height: "40px", width: "auto" }} className="drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300 shrink-0 md:h-[56px]" />
+          <Image src={asset("/logo.png")} alt="Auraha Safi Explorers" width={0} height={0} sizes="100vw" style={{ height: "40px", width: "auto" }} className="drop-shadow-[0_2px_8px_rgba(0,0,0,0.6)] group-hover:scale-105 transition-transform duration-300 shrink-0 md:h-[56px]" />
           <div className="flex flex-col leading-none">
             <span className="text-white font-bold text-base md:text-lg tracking-tight">Auraha Safi Explorers</span>
             <span className="text-yellow-400 text-[9px] md:text-[10px] tracking-widest uppercase">Pure exploration with endless joy</span>

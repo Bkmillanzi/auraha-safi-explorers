@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { Button } from "@heroui/react";
+import { asset } from "@/lib/basePath";
 
 const HERO_IMAGES = [
     "/freepik__a-shirtless-male-hiker-standing-on-a-rocky-cliff-e__42742.png",
@@ -16,7 +17,7 @@ export default function HeroSection() {
     <section className="relative h-screen min-h-[700px] overflow-hidden" id="home">
       {HERO_IMAGES.map((src, i) => (
         <div key={i} className={`absolute inset-0 transition-opacity duration-1000 ${i === active ? "opacity-100" : "opacity-0"}`}>
-          <img src={src.startsWith("/") ? `/auraha-safi-explorers${src}` : src} alt="" className={`w-full h-full object-cover${i === 0 ? " -scale-x-100" : ""}`} loading={i === 0 ? "eager" : "lazy"} />
+          <img src={asset(src)} alt="" className={`w-full h-full object-cover${i === 0 ? " -scale-x-100" : ""}`} loading={i === 0 ? "eager" : "lazy"} />
         </div>
       ))}
       <div className="absolute inset-0" style={{ background: "rgba(0,0,0,0.45)" }} />
