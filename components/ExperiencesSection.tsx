@@ -46,14 +46,14 @@ export default function ExperiencesSection() {
       <div className="container mx-auto px-6">
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12">
           <div>
-            <p className="text-[#1F5C3A] font-semibold text-sm tracking-widest uppercase mb-3">Unique Moments</p>
-            <h2 className="font-display text-4xl sm:text-5xl font-black text-base-content">
-              Curated
-              <br />
-              <span className="italic text-transparent bg-clip-text bg-gradient-to-r from-[#1F5C3A] to-[#6B3A1F]">Experiences</span>
+            <p className="text-[#B8722E] font-bold text-xs uppercase tracking-[0.2em] mb-2">
+              AUTHENTIC MOMENTS
+            </p>
+            <h2 className="font-serif text-3xl sm:text-4xl font-black text-[#1B4332] tracking-tight">
+              Curated Safari Experiences
             </h2>
           </div>
-          <button className="self-start md:self-auto btn btn-outline border-base-content/20 hover:border-base-content/50 rounded-2xl px-8 font-semibold">
+          <button className="self-start md:self-auto btn btn-sm rounded-lg border border-stone-300 hover:border-[#B8722E] text-stone-800 text-xs font-bold px-6">
             View All Experiences →
           </button>
         </div>
