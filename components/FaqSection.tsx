@@ -7,7 +7,7 @@ const FAQS = [
     a: "The Great Migration is a year-round phenomenon: From July to October, herds cross the dramatic crocodile-filled Mara River in Northern Serengeti into Kenya's Masai Mara. From January to March, the herds gather on the short-grass plains of Southern Serengeti (Ndutu) for the calving season, where over 8,000 calves are born daily, attracting immense predator action.",
   },
   {
-    q: "Are national park fees and crater permits included in your prices?",
+    q: "Are national park fees and crater permits included in your quotes?",
     a: "Yes, 100%. All Auraha Safi proposals are fully inclusive of TANAPA national park entrance fees, Ngorongoro Crater descent vehicle fees, concession fees, camping/lodge fees, transit permits, and 18% Tanzanian government VAT. You will never be surprised by unexpected gate fees.",
   },
   {

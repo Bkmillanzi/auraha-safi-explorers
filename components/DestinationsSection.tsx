@@ -163,8 +163,8 @@ export default function DestinationsSection() {
                 <div className={`absolute top-4 left-4 ${dest.tagColor} text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-lg`}>
                   {dest.tag}
                 </div>
-                <div className="absolute top-4 right-4 glass text-white text-xs font-bold px-3 py-1.5 rounded-full">
-                  From ${dest.price.toLocaleString()}
+                <div className="absolute top-4 right-4 glass text-[#D4975C] text-xs font-bold px-3 py-1.5 rounded-full">
+                  Custom Itinerary
                 </div>
                 
                 <div className="absolute bottom-0 left-0 right-0 p-5">

@@ -304,11 +304,8 @@ export default function PackagesSection() {
               <div className="p-6 pt-0 border-t border-base-200 mt-2">
                 <div className="flex items-center justify-between pt-4 mb-4">
                   <div>
-                    <div className="flex items-baseline gap-2">
-                      <span className="text-2xl font-black text-base-content">${pkg.price.toLocaleString()}</span>
-                      <span className="text-xs text-base-content/40 line-through">${pkg.originalPrice.toLocaleString()}</span>
-                    </div>
-                    <span className="text-[11px] text-base-content/50">per person (all-inclusive)</span>
+                    <span className="text-xs font-bold text-[#B8722E] tracking-wide uppercase block">Custom Itinerary</span>
+                    <span className="text-[11px] text-base-content/50">Inquire for tailored quote</span>
                   </div>
                   <div className="text-right">
                     <div className="flex items-center gap-1 text-xs font-bold text-[#B8722E]">
@@ -391,8 +388,8 @@ export default function PackagesSection() {
 
               <div className="flex items-center justify-between pt-4 border-t border-base-200">
                 <div>
-                  <span className="text-xl font-black text-base-content">${activePackage.price.toLocaleString()}</span>
-                  <span className="text-xs text-base-content/50 ml-1.5">per person</span>
+                  <span className="text-sm font-bold text-[#B8722E] uppercase tracking-wide block">Pricing On Request</span>
+                  <span className="text-[11px] text-base-content/50">Tailored to season & group size</span>
                 </div>
                 <div className="flex gap-3">
                   <button

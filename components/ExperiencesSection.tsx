@@ -92,7 +92,7 @@ export default function ExperiencesSection() {
                         {exp.groupSize}
                       </span>
                     </div>
-                    <span className="text-[#D4975C] font-bold text-lg">${exp.price.toLocaleString()}</span>
+                    <span className="text-[#D4975C] font-semibold text-xs tracking-wide uppercase px-2.5 py-1 rounded-full bg-white/10 border border-white/15">Custom Quote</span>
                   </div>
                 </div>
               </div>
