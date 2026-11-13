@@ -96,7 +96,7 @@ const PACKAGES: PackageItem[] = [
     category: "Mountain Treks",
     duration: "8 Days / 7 Nights",
     route: "Londorossi Gate → Shira Plateau → Barranco Wall → Barafu Base → Uhuru Peak (5,895m)",
-    image: "https://images.unsplash.com/photo-1573226137699-a6ec0a2f9b0c?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1589553416260-f586c8f1514f?w=800&q=80",
     price: 2780,
     originalPrice: 3300,
     rating: 4.97,
@@ -157,7 +157,7 @@ const PACKAGES: PackageItem[] = [
     category: "Southern Circuit",
     duration: "4 Days / 3 Nights",
     route: "Dar es Salaam / Arusha → Nyerere National Park (Rufiji River) → Dar es Salaam",
-    image: "https://images.unsplash.com/photo-1551373884-8a04a80d4af7?w=800&q=80",
+    image: "https://images.unsplash.com/photo-1575550959106-5a7defe28b56?w=800&q=80",
     price: 1890,
     originalPrice: 2250,
     rating: 4.89,
@@ -316,16 +316,17 @@ export default function PackagesSection() {
                   </div>
                 </div>
 
-                <div className="grid grid-cols-2 gap-2">
+                <div className="grid grid-cols-2 gap-2.5 pt-1">
                   <button
+                    type="button"
                     onClick={() => setActivePackage(pkg)}
-                    className="btn btn-sm btn-outline border-base-300 hover:border-[#B8722E] hover:bg-base-200 text-base-content text-xs rounded-xl"
+                    className="w-full py-2.5 px-3 rounded-xl border border-stone-300 hover:border-[#B8722E] bg-white hover:bg-stone-50 text-stone-800 text-xs font-bold transition-all duration-200 text-center flex items-center justify-center cursor-pointer shadow-sm"
                   >
                     View Itinerary
                   </button>
                   <a
                     href={`#planner?package=${encodeURIComponent(pkg.name)}`}
-                    className="btn btn-sm bg-[#B8722E] hover:bg-[#8B5220] text-white border-0 text-xs font-bold rounded-xl shadow-md"
+                    className="w-full py-2.5 px-3 rounded-xl bg-[#B8722E] hover:bg-[#965A20] text-white text-xs font-bold transition-all duration-200 text-center flex items-center justify-center shadow-md hover:shadow-lg whitespace-nowrap"
                   >
                     Book / Inquire
                   </a>
@@ -391,17 +392,18 @@ export default function PackagesSection() {
                   <span className="text-sm font-bold text-[#B8722E] uppercase tracking-wide block">Pricing On Request</span>
                   <span className="text-[11px] text-base-content/50">Tailored to season & group size</span>
                 </div>
-                <div className="flex gap-3">
+                <div className="flex items-center gap-2.5">
                   <button
+                    type="button"
                     onClick={() => setActivePackage(null)}
-                    className="btn btn-sm btn-ghost text-xs"
+                    className="px-4 py-2 rounded-xl border border-stone-300 hover:bg-stone-100 text-stone-700 text-xs font-semibold transition-colors cursor-pointer"
                   >
                     Close
                   </button>
                   <a
                     href="#planner"
                     onClick={() => setActivePackage(null)}
-                    className="btn btn-sm bg-[#B8722E] text-white hover:bg-[#8B5220] text-xs font-bold rounded-xl"
+                    className="px-5 py-2 rounded-xl bg-[#B8722E] hover:bg-[#965A20] text-white text-xs font-bold transition-all shadow-md hover:shadow-lg whitespace-nowrap"
                   >
                     Customize This Tour
                   </a>

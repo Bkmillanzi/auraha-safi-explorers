@@ -9,7 +9,7 @@ const EXPERIENCES = [
   },
   {
     id: 2, title: "Kilimanjaro Summit Trek", location: "Kilimanjaro NP",
-    image: "https://images.unsplash.com/photo-1573226137699-a6ec0a2f9b0c?w=600&q=80",
+    image: "https://images.unsplash.com/photo-1589553416260-f586c8f1514f?w=600&q=80",
     duration: "7–9 Days", groupSize: "2-8", price: 2800, category: "Adventure",
     color: "from-[#6B3A1F]/80",
   },
