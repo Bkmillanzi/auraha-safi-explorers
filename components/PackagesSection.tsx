@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { inquiryLink } from "@/lib/features";
 
 interface ItineraryDay {
   day: number;
@@ -325,7 +326,7 @@ export default function PackagesSection() {
                     View Itinerary
                   </button>
                   <a
-                    href={`#planner?package=${encodeURIComponent(pkg.name)}`}
+                    {...inquiryLink(`the ${pkg.name} package`)}
                     className="w-full py-2.5 px-3 rounded-xl bg-[#B8722E] hover:bg-[#965A20] text-white text-xs font-bold transition-all duration-200 text-center flex items-center justify-center shadow-md hover:shadow-lg whitespace-nowrap"
                   >
                     Book / Inquire
@@ -401,7 +402,7 @@ export default function PackagesSection() {
                     Close
                   </button>
                   <a
-                    href="#planner"
+                    {...inquiryLink(activePackage ? `customising the ${activePackage.name} package` : undefined)}
                     onClick={() => setActivePackage(null)}
                     className="px-5 py-2 rounded-xl bg-[#B8722E] hover:bg-[#965A20] text-white text-xs font-bold transition-all shadow-md hover:shadow-lg whitespace-nowrap"
                   >

@@ -12,6 +12,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import FaqSection from "@/components/FaqSection";
 import NewsletterSection from "@/components/NewsletterSection";
 import Footer from "@/components/Footer";
+import { SHOW_TRIP_PLANNER } from "@/lib/features";
 
 export default function Home() {
   return (
@@ -25,7 +26,7 @@ export default function Home() {
       <PackagesSection />
       <ExperiencesSection />
       <StatsSection />
-      <TripPlannerSection />
+      {SHOW_TRIP_PLANNER && <TripPlannerSection />}
       <TestimonialsSection />
       <FaqSection />
       <NewsletterSection />

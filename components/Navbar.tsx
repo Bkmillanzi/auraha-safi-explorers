@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { asset } from "@/lib/basePath";
+import { inquiryLink } from "@/lib/features";
 
 const NAV_LINKS = [
   { name: "Home", href: "#home" },
@@ -95,7 +96,7 @@ export default function Navbar() {
             <span className="whitespace-nowrap font-medium">+255 658 402 886</span>
           </a>
           <a
-            href="#planner"
+            {...inquiryLink()}
             className="whitespace-nowrap bg-[#F59E0B] hover:bg-[#D97706] text-white font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all shrink-0"
           >
             Book Now
@@ -145,7 +146,7 @@ export default function Navbar() {
               <span>WhatsApp: +255 658 402 886</span>
             </a>
             <a
-              href="#planner"
+              {...inquiryLink()}
               onClick={() => setMenuOpen(false)}
               className="w-full text-center bg-[#F59E0B] hover:bg-[#D97706] text-white font-bold text-xs uppercase tracking-wider py-3 rounded-lg shadow-sm"
             >

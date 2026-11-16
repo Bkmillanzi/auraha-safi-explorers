@@ -1,4 +1,5 @@
 "use client";
+import { inquiryLink } from "@/lib/features";
 
 const STYLES = [
   {
@@ -90,7 +91,7 @@ export default function SafariStylesSection() {
 
               <div className="p-6 pt-0">
                 <a
-                  href="#planner"
+                  {...inquiryLink(style.title)}
                   className="w-full block text-center py-2.5 rounded-lg border border-stone-300 hover:border-[#F59E0B] hover:bg-[#F59E0B]/5 text-xs font-bold text-stone-800 hover:text-[#D97706] transition-colors"
                 >
                   Inquire This Style →

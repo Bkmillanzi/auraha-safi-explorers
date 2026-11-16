@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import { inquiryLink } from "@/lib/features";
 
 const CATEGORIES = ["All", "Northern Circuit", "Southern Circuit", "Islands & Coast", "Mountains"];
 
@@ -202,7 +203,7 @@ export default function DestinationsSection() {
                 </div>
 
                 <a
-                  href="#planner"
+                  {...inquiryLink(`a safari to ${dest.name}`)}
                   className="w-full block text-center py-2.5 rounded-xl bg-base-200 hover:bg-[#B8722E] text-base-content hover:text-white text-xs font-bold transition-colors"
                 >
                   Plan Safari to {dest.name.split(" ")[0]} →
