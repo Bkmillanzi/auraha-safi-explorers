@@ -99,7 +99,7 @@ export default function Navbar() {
             {...inquiryLink()}
             className="whitespace-nowrap bg-[#F59E0B] hover:bg-[#D97706] text-white font-bold text-xs uppercase tracking-wider px-5 py-2.5 rounded-lg shadow-md hover:shadow-lg transition-all shrink-0"
           >
-            Book Now
+            Plan My Safari
           </a>
         </div>
 
@@ -147,10 +147,13 @@ export default function Navbar() {
             </a>
             <a
               {...inquiryLink()}
-              onClick={() => setMenuOpen(false)}
+              onClick={() => {
+                inquiryLink().onClick?.();
+                setMenuOpen(false);
+              }}
               className="w-full text-center bg-[#F59E0B] hover:bg-[#D97706] text-white font-bold text-xs uppercase tracking-wider py-3 rounded-lg shadow-sm"
             >
-              Book Now / Custom Safari
+              Plan My Safari
             </a>
           </div>
         </div>

@@ -24,9 +24,9 @@ export default function Home() {
       <WhyUsSection />
       {SHOW_DESTINATIONS && <DestinationsSection />}
       <PackagesSection />
+      {SHOW_TRIP_PLANNER && <TripPlannerSection />}
       <ExperiencesSection />
       <StatsSection />
-      {SHOW_TRIP_PLANNER && <TripPlannerSection />}
       <TestimonialsSection />
       <FaqSection />
       <NewsletterSection />

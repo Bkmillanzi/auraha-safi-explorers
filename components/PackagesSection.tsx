@@ -403,7 +403,12 @@ export default function PackagesSection() {
                   </button>
                   <a
                     {...inquiryLink(activePackage ? `customising the ${activePackage.name} package` : undefined)}
-                    onClick={() => setActivePackage(null)}
+                    onClick={() => {
+                      inquiryLink(
+                        activePackage ? `customising the ${activePackage.name} package` : undefined,
+                      ).onClick?.();
+                      setActivePackage(null);
+                    }}
                     className="px-5 py-2 rounded-xl bg-[#B8722E] hover:bg-[#965A20] text-white text-xs font-bold transition-all shadow-md hover:shadow-lg whitespace-nowrap"
                   >
                     Customize This Tour

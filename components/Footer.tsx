@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { asset } from "@/lib/basePath";
-import { destinationsHref, inquiryLink } from "@/lib/features";
+import { destinationsHref, inquiryLinkPlain } from "@/lib/features";
 
 export default function Footer() {
   return (
@@ -76,7 +76,7 @@ export default function Footer() {
               <li><a href="#packages" className="hover:text-white transition-colors">8-Day Kilimanjaro Lemosho</a></li>
               <li><a href="#packages" className="hover:text-white transition-colors">5-Day Northern Highlights</a></li>
               <li><a href="#packages" className="hover:text-white transition-colors">4-Day Selous River Safari</a></li>
-              <li><a {...inquiryLink()} className="hover:text-white transition-colors text-amber-400 font-semibold">Custom Itinerary Request</a></li>
+              <li><a {...inquiryLinkPlain} className="hover:text-white transition-colors text-amber-400 font-semibold">Custom Itinerary Request</a></li>
             </ul>
           </div>
 
