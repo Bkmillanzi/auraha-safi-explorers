@@ -73,7 +73,7 @@ export default function HeroSection() {
           </div>
 
           {/* Headline */}
-          <h1 className="font-serif text-4xl sm:text-6xl md:text-8xl font-black text-white leading-[1.05] mb-4 sm:mb-6 animate-fade-in-up-delay-1 drop-shadow-md">
+          <h1 className="font-serif text-4xl sm:text-6xl md:text-8xl font-black text-white leading-[1.05] mb-6 sm:mb-10 animate-fade-in-up-delay-1 drop-shadow-md">
             Tanzania Like
             <br />
             <span className="text-[#F59E0B] italic">Never Before</span>
@@ -81,12 +81,8 @@ export default function HeroSection() {
             Awaits You
           </h1>
 
-          <p className="text-white/85 text-sm sm:text-xl max-w-2xl mx-auto mb-6 sm:mb-10 animate-fade-in-up-delay-2 font-sans font-normal leading-relaxed drop-shadow">
-            Expertly crafted safaris, Kilimanjaro treks, and Zanzibar escapes — designed by Arusha locals who know every trail and sunrise.
-          </p>
-
           {/* Search bar */}
-          <div className="animate-fade-in-up-delay-3 max-w-3xl mx-auto">
+          <div className="animate-fade-in-up-delay-2 max-w-3xl mx-auto">
             <div className="glass rounded-2xl p-2 flex flex-col sm:flex-row gap-2 shadow-2xl">
               
               {/* Destination Search Input */}
