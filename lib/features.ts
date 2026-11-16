@@ -13,6 +13,17 @@
 /** Hidden 16 Nov 2026 at the client's request. Set to `true` to restore. */
 export const SHOW_TRIP_PLANNER = false;
 
+/** Hidden 16 Nov 2026 at the client's request. Set to `true` to restore. */
+export const SHOW_DESTINATIONS = false;
+
+/**
+ * Where links that pointed at the Destinations section go.
+ *
+ * While Destinations is hidden they fall back to Safari Packages, which
+ * covers the same places, rather than dead-ending on a missing anchor.
+ */
+export const destinationsHref = SHOW_DESTINATIONS ? "#destinations" : "#packages";
+
 export const WHATSAPP_URL = "https://wa.me/255658402886";
 
 /**

@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@heroui/react";
 import { asset } from "@/lib/basePath";
+import { destinationsHref } from "@/lib/features";
 import DatePickerModal from "@/components/DatePickerModal";
 
 const HERO_IMAGES = [
@@ -140,7 +141,7 @@ export default function HeroSection() {
             {["Serengeti", "Kilimanjaro", "Zanzibar", "Ngorongoro", "Tarangire"].map(tag => (
               <a
                 key={tag}
-                href="#destinations"
+                href={destinationsHref}
                 className="px-3 py-1 rounded-full text-xs font-medium text-white/90 bg-white/10 hover:bg-white/20 transition-colors border border-white/15 hover:border-white/30"
               >
                 {tag}

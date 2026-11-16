@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { asset } from "@/lib/basePath";
-import { inquiryLink } from "@/lib/features";
+import { destinationsHref, inquiryLink } from "@/lib/features";
 
 export default function Footer() {
   return (
@@ -59,12 +59,12 @@ export default function Footer() {
           <div>
             <h4 className="font-bold text-white text-sm mb-4 tracking-wide uppercase text-xs text-[#D4975C]">Destinations</h4>
             <ul className="space-y-2.5 text-xs sm:text-sm">
-              <li><a href="#destinations" className="hover:text-white transition-colors">Serengeti National Park</a></li>
-              <li><a href="#destinations" className="hover:text-white transition-colors">Ngorongoro Caldera</a></li>
-              <li><a href="#destinations" className="hover:text-white transition-colors">Tarangire Baobabs</a></li>
-              <li><a href="#destinations" className="hover:text-white transition-colors">Mount Kilimanjaro</a></li>
-              <li><a href="#destinations" className="hover:text-white transition-colors">Zanzibar Spice Coast</a></li>
-              <li><a href="#destinations" className="hover:text-white transition-colors">Nyerere / Selous Wild</a></li>
+              <li><a href={destinationsHref} className="hover:text-white transition-colors">Serengeti National Park</a></li>
+              <li><a href={destinationsHref} className="hover:text-white transition-colors">Ngorongoro Caldera</a></li>
+              <li><a href={destinationsHref} className="hover:text-white transition-colors">Tarangire Baobabs</a></li>
+              <li><a href={destinationsHref} className="hover:text-white transition-colors">Mount Kilimanjaro</a></li>
+              <li><a href={destinationsHref} className="hover:text-white transition-colors">Zanzibar Spice Coast</a></li>
+              <li><a href={destinationsHref} className="hover:text-white transition-colors">Nyerere / Selous Wild</a></li>
             </ul>
           </div>
 

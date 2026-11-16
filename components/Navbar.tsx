@@ -3,7 +3,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { asset } from "@/lib/basePath";
-import { inquiryLink } from "@/lib/features";
+import { SHOW_DESTINATIONS, inquiryLink } from "@/lib/features";
 
 const NAV_LINKS = [
   { name: "Home", href: "#home" },
@@ -13,7 +13,7 @@ const NAV_LINKS = [
   { name: "Safari Styles", href: "#safari-styles" },
   { name: "Why Us", href: "#why-us" },
   { name: "FAQs", href: "#faqs" },
-];
+].filter(link => SHOW_DESTINATIONS || link.href !== "#destinations");
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);

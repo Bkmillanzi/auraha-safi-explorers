@@ -12,7 +12,7 @@ import TestimonialsSection from "@/components/TestimonialsSection";
 import FaqSection from "@/components/FaqSection";
 import NewsletterSection from "@/components/NewsletterSection";
 import Footer from "@/components/Footer";
-import { SHOW_TRIP_PLANNER } from "@/lib/features";
+import { SHOW_DESTINATIONS, SHOW_TRIP_PLANNER } from "@/lib/features";
 
 export default function Home() {
   return (
@@ -22,7 +22,7 @@ export default function Home() {
       <TanzaniaAwaitsSection />
       <SafariStylesSection />
       <WhyUsSection />
-      <DestinationsSection />
+      {SHOW_DESTINATIONS && <DestinationsSection />}
       <PackagesSection />
       <ExperiencesSection />
       <StatsSection />
